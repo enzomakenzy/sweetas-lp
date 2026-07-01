@@ -1,5 +1,9 @@
+import { Header } from "./components/layout/header";
+
 export default function App() {
   return (
-    <div></div>
+    <div className="min-h-screen">
+      <Header />
+    </div>
   );
 }
