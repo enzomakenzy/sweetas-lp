@@ -1,9 +1,9 @@
-import logo from "../../assets/main-logo.png" 
+import logo from "@/assets/images/main-logo.png" 
 import { Button } from "../ui/button";
 
 export function Header() {
   return (
-    <header className="grid grid-cols-2 py-3 px-4 sm:px-14 lg:grid-cols-3 lg:px-20 xl:px-30 2xl:px-40 border-b items-center">
+    <header className="grid grid-cols-2 py-3 px-4 sm:px-14 lg:grid-cols-3 lg:px-20 xl:px-30 2xl:px-40 border-b items-center absolute bg-background w-full">
       <a href="#">
         <img 
           src={logo}
@@ -19,7 +19,7 @@ export function Header() {
       </nav>
 
       <div className="flex justify-end">
-        <Button size="lg">Peça já</Button>
+        <Button size="sm">Peça já</Button>
       </div>
     </header>
   );
