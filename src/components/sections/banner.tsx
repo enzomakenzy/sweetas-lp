@@ -1,10 +1,10 @@
 import { Diamond, Heart } from "lucide-react";
 import { Button } from "../ui/button";
-import bannerImg from "@/assets/images/cone-banner (2).png";
+import bannerImg from "@/assets/images/cone-banner.png";
 
 export function Banner() {
   return (
-    <section className="grid grid-cols-1 pt-36 md:px-8 lg:px-24 lg:grid-cols-2 lg:gap-6 lg:items-center lg:justify-items-center lg:justify-center lg:place-items-center">
+    <section className="grid grid-cols-1 px-3 pt-36 md:px-11 lg:px-27 lg:grid-cols-2 lg:gap-6 lg:items-center lg:justify-items-center lg:justify-center lg:place-items-center">
       <div className="flex flex-col gap-8 mb-8">
         <div>
           <h3 className="font-accent text-2xl text-terciary rotate-356 sm:rotate-357 md:rotate-358 2xl:rotate-359 mb-4">temos um A's</h3>

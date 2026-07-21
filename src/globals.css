@@ -57,6 +57,18 @@
   
 @theme {
   --breakpoint-1xl: 83.125rem; /* 1330px */
+
+  --animate-marquee: marquee 60s linear infinite;
+
+  @keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 }
 
 :root {
@@ -146,6 +158,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 
 @layer base {
   * {
