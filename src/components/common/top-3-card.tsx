@@ -23,7 +23,7 @@ function listStars(position: number) {
 
 export function Top3Card({ position, favlorName, description, image, imageAlt, className }: Props) {
   return (
-    <div className={`${position === 1 ? "bg-primary" : "bg-background"} rounded-4xl px-5 py-6 flex flex-col gap-5 shadow relative overflow-hidden ${className}`}>
+    <div className={`${position === 1 ? "bg-primary" : "bg-background"} rounded-2xl px-5 py-6 flex flex-col gap-5 shadow relative overflow-hidden ${className}`}>
       <p className={`${position === 1 ? "text-background/20" : "text-primary/20"} absolute -right-5 -top-16 text-[142px] font-bold z-0`}>{position}</p>
 
       <div className="flex items-center justify-between">
@@ -47,9 +47,9 @@ export function Top3Card({ position, favlorName, description, image, imageAlt, c
       </div>
 
       <div className="pb-1">
-        <h4 className={`text-2xl font-heading font-bold uppercase ${position === 1 ? "text-background" : "text-primary"}`}>{favlorName}</h4>
+        <h4 className={`${position === 1 ? "text-background" : "text-primary"} text-2xl font-heading font-bold uppercase lg:text-3xl`}>{favlorName}</h4>
 
-        <h4 className={`text-2xl/5 font-accent ${position === 1 ? "text-background" : "text-secondary"}`}>{description}</h4>
+        <h4 className={`${position === 1 ? "text-background" : "text-secondary"} text-2xl/5 font-accent `}>{description}</h4>
       </div>
     </div>
   );

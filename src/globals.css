@@ -75,7 +75,7 @@
 :root {
     --background: oklch(91.868% 0.01643 17.108);
     --foreground: oklch(0.213 0 89.876);
-    --card: oklch(91.868% 0.01643 17.108);
+    --card: oklch(95.252% 0.01298 16.927);
     --card-foreground: oklch(0.213 0 89.876);
     --popover: oklch(91.868% 0.01643 17.108);
     --popover-foreground: oklch(0.213 0 89.876);
@@ -107,7 +107,7 @@
     --sidebar-ring: oklch(0.463 0.185 28.406);
 
     --tertiary: oklch(0.551 0.222 28.450);
-    --quaternary: oklch(47.746% 0.09612 56.627 / 0.89);
+    --quaternary: oklch(41.081% 0.08829 56.038 / 0.89);
     --quinary: oklch(87.916% 0.02143 303.856);
 }
 

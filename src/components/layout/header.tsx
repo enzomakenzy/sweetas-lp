@@ -19,7 +19,7 @@ export function Header() {
       </nav>
 
       <div className="flex justify-end">
-        <Button size="sm">Peça já</Button>
+        <Button size="default">Peça já</Button>
       </div>
     </header>
   );
