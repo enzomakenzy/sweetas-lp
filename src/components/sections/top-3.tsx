@@ -26,7 +26,7 @@ export function Top3() {
             description="combinação premium" 
             image={coneNutinhoMorango} 
             imageAlt="Cone de nutinho de morango"
-            className="order-1 relative lg:order-2"
+            className="order-1 lg:order-2 lg:bottom-0 lg:hover:bottom-3"
           />
 
           <Top3Card  
@@ -35,7 +35,7 @@ export function Top3() {
             description="crocância máxima"
             image={coneOvomaltine}
             imageAlt="Cone de ovomaltine"
-            className="order-2 relative lg:order-1 lg:top-5"
+            className="order-2 lg:order-1 lg:top-5 lg:hover:top-2"
           />
 
           <Top3Card 
@@ -44,7 +44,7 @@ export function Top3() {
             description="cremosidade absurda"
             image={coneOreo}
             imageAlt="Cone de Oreo"
-            className="order-3 relative lg:top-5"
+            className="order-3 lg:top-5 lg:hover:top-2"
           />
         </div>
 
