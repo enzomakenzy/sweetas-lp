@@ -13,20 +13,20 @@ export function Top3() {
           <div className="h-px w-7 bg-primary"></div>
         </div>
 
-        <h2 className="font-heading font-bold text-5xl text-primary text-center pt-5 lg:text-7xl">
+        <h2 className="font-heading font-bold text-5xl text-primary text-center pt-5 md:text-6xl lg:text-7xl">
           <span className="font-accent text-secondary">the</span> Top 3
         </h2>
 
         <p className="pt-5 text-quaternary text-center lg:text-lg">Os sabores que roubaram o coração dos clientes — e não devolvem.</p>
 
-        <div className="pt-12 flex flex-col gap-5 lg:flex-row lg:items-end">
+        <div className="pt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:flex-row lg:items-end">
           <Top3Card 
             position={1} 
             favlorName="Nutinho c/ morango" 
             description="combinação premium" 
             image={coneNutinhoMorango} 
             imageAlt="Cone de nutinho de morango"
-            className="order-1 lg:order-2 lg:bottom-0 lg:hover:bottom-3"
+            className="order-1 sm:col-span-2 lg:col-span-1 lg:order-2"
           />
 
           <Top3Card  
@@ -35,7 +35,7 @@ export function Top3() {
             description="crocância máxima"
             image={coneOvomaltine}
             imageAlt="Cone de ovomaltine"
-            className="order-2 lg:order-1 lg:top-5 lg:hover:top-2"
+            className="order-2 lg:order-1 lg:top-5"
           />
 
           <Top3Card 
@@ -44,7 +44,7 @@ export function Top3() {
             description="cremosidade absurda"
             image={coneOreo}
             imageAlt="Cone de Oreo"
-            className="order-3 lg:top-5 lg:hover:top-2"
+            className="order-3 lg:top-5"
           />
         </div>
 
