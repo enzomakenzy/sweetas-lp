@@ -11,7 +11,7 @@ type Props = {
 export function MenuCard({ favlorName, price, description, image, imageAlt }: Props) {
   return (
     <div className="rounded-2xl overflow-hidden border-2 border-quaternary/50 relative transition-all duration-400 lg:max-w-full bg-card lg:hover:border-primary lg:hover:-translate-y-2">
-      <img src={image} alt={imageAlt} className="max-sm:h-72 w-full object-cover object-top transition duration-400 hover:lg:scale-104 hover:lg:-translate-y-2" />
+      <img src={image} alt={imageAlt} className="h-72 xs:h-96 sm:h-72 2md:h-96 w-full object-cover object-top transition duration-400 hover:lg:scale-104 hover:lg:-translate-y-2" />
 
       <div className="p-5">
         <h3 className="font-heading font-bold text-primary text-xl">{favlorName}</h3> 
