@@ -9,7 +9,7 @@ export function Banner() {
         <div className="flex flex-col gap-8 mb-8">
           <div>
             <h3 className="font-accent text-2xl text-tertiary rotate-356 sm:rotate-357 md:rotate-358 2xl:rotate-359 mb-4">temos um A's</h3>
-            <h1 className="text-5xl text-primary font-bold mb-4 lg:max-w-151 1xl:text-7xl lg:mb-6">Crocância que <span className="text-secondary">apaixona</span> a cada mordida.</h1>
+            <h1 className="text-5xl text-primary font-bold sm:text-6xl mb-4 lg:max-w-151 1xl:text-7xl lg:mb-6">Crocância que <span className="text-secondary">apaixona</span> a cada mordida.</h1>
             <p className="text-quaternary text-lg md:text-xl lg:max-w-160 lg:mb-3">Casquinhas crocantes, recheios cremosos e sabores que viraram febre. Feitos à mão, na hora, só pra você.</p>
           </div>
 
@@ -26,8 +26,8 @@ export function Banner() {
         </div>
 
         <div className="pr-3 lg:pr-0">
-          <div className="relative shadow-lg rounded-xl sm:max-w-140 m-auto">
-            <img src={bannerImg} alt="Cone da Sweet a's" className="rounded-xl w-full" />
+          <div className="relative shadow-lg rounded-xl sm:max-w-170 m-auto">
+            <img src={bannerImg} alt="Cone da Sweet a's" className="rounded-2xl w-full" />
 
             <p className="bg-primary absolute z-10 -right-2 -bottom-5 flex flex-col items-center justify-center rounded-full h-23 w-23 text-background text-2xl font-bold rotate-14 lg:text-3xl lg:h-27 lg:w-27">
               <span className="font-accent h-5 text-base font-normal lg:text-xl lg:h-6">a partir de</span> R$7
