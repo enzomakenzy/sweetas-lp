@@ -57,6 +57,8 @@
   }
   
 @theme {
+  --breakpoint-xs: 31.25rem; /* 500px */
+  --breakpoint-2md: 56.25rem; /* 900px */
   --breakpoint-1xl: 83.125rem; /* 1330px */
 
   --animate-marquee: marquee 60s linear infinite;
