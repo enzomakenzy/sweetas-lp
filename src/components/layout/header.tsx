@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 export function Header() {
   return (
-    <header className="grid grid-cols-2 py-6 px-4 sm:px-14 lg:grid-cols-3 lg:px-20 xl:px-30 2xl:px-40 items-center absolute bg-background w-full">
+    <header className="grid grid-cols-2 py-6 px-4 lg:grid-cols-3 lg:px-20 xl:px-30 2xl:px-40 items-center absolute bg-background w-full">
       <a href="#">
         <img 
           src={logo}
