@@ -15,7 +15,7 @@ export function Banner() {
 
           <div className="flex flex-col items-start gap-3 sm:flex-row">
             <Button size="lg">Ver cardápio</Button>
-            <Button size="lg" variant="outline">Pedir no WhatsApp</Button>
+            <Button size="lg" variant="outline" className="inset-ring-2 inset-ring-primary">Pedir no WhatsApp</Button>
           </div>
 
           <ul className="flex gap-4">
