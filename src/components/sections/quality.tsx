@@ -1,4 +1,5 @@
 import { Heart } from "lucide-react";
+import { QualityCard } from "../common/quality-card";
 
 export function Quality() {
   return (
@@ -13,13 +14,31 @@ export function Quality() {
 
         <p className="text-background/80 text-sm mb-6">Não é só um coninho. É receita de família, ingrediente premium e um capricho ridículo em cada camada.</p>
 
-        <p className="flex items-center gap-2 uppercase text-sm font-bold text-background/70">
-          <Heart size={16} className="text-secondary fill-secondary" /> 
+        <p className="flex items-center gap-2 uppercase text-xs font-bold text-background/70 tracking-widest">
+          <Heart size={14} className="text-secondary fill-secondary" /> 
           Feito com cuidado desde o começo.
         </p>
       </div>
 
-      <div></div>
+      <div className="grid grid-cols-1 gap-3 mt-6">
+        <QualityCard 
+          position="01"
+          cardTitle="totalmente artesanal"
+          description="Cada coninho é montado à mão, na hora,com carinho e capricho."
+        />
+
+        <QualityCard 
+          position="02"
+          cardTitle="Ingredientes premium"
+          description="Chocolates, cremes e frutas selecionados para um sabor inesquecível."
+        />
+
+        <QualityCard 
+          position="03"
+          cardTitle="Receita da família"
+          description="Recheios caseiros desenvolvidos com base em receitas tradicionais."
+        />
+      </div>
     </section>
   );
 }
