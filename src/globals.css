@@ -48,6 +48,9 @@
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
 
+  --color-primary-quality: var(--primary-quality);
+  --color-primary-quality-accent: var(--primary-quality-accent);
+  --color-primary-quality-border: var(--primary-quality-border);
   --color-tertiary: var(--tertiary);
   --color-quaternary: var(--quaternary);
   --color-quinary: var(--quinary);
@@ -90,7 +93,7 @@
   --input: oklch(0.88 0.015 17.5);
   --ring: oklch(0.463 0.185 28.406);
   --chart-1: oklch(0.463 0.185 28.406);
-  --chart-2: oklch(0.805 0.056 304.283);
+  --chart-2: oklch(72.754% 0.09802 302.776);
   --chart-3: oklch(0.551 0.222 28.450);
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
@@ -103,7 +106,10 @@
   --sidebar-accent-foreground: oklch(0.213 0 89.876);
   --sidebar-border: oklch(0.88 0.015 17.5);
   --sidebar-ring: oklch(0.463 0.185 28.406);
-
+  
+  --primary-quality: oklch(0.4718 0.1818 27.73);
+  --primary-quality-accent: oklch(0.5085 0.1818 27.73);
+  --primary-quality-border: oklch(54.108% 0.17301 25.058);
   --tertiary: oklch(0.551 0.222 28.450);
   --quaternary: oklch(41.081% 0.08829 56.038 / 0.89);
   --quinary: oklch(87.916% 0.02143 303.856);
@@ -166,7 +172,6 @@
   fill: var(--secondary);
   color: var(--secondary)
 }
-
 
 @layer base {
   * {
