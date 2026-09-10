@@ -3,6 +3,7 @@ import { Banner } from "./components/sections/banner";
 import { Marquee } from "./components/sections/marquee";
 import { Menu } from "./components/sections/menu";
 import { Quality } from "./components/sections/quality";
+import { Reviews } from "./components/sections/reviews";
 import { Top3 } from "./components/sections/top-3";
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
         <Top3 />
         <Menu />
         <Quality />
+        <Reviews />
       </div>
     </div>
   );
