@@ -1,3 +1,4 @@
+import { Footer } from "./components/layout/footer";
 import { Header } from "./components/layout/header";
 import { Banner } from "./components/sections/banner";
 import { Marquee } from "./components/sections/marquee";
@@ -17,6 +18,7 @@ export default function App() {
         <Menu />
         <Quality />
         <Reviews />
+        <Footer />
       </div>
     </div>
   );
