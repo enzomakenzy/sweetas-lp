@@ -1,4 +1,5 @@
-import { Heart, Star } from "lucide-react";
+import { listStars } from "@/utils/list-stars";
+import { Heart } from "lucide-react";
 
 type Props = {
   position: number;
@@ -8,18 +9,6 @@ type Props = {
   imageAlt: string;
   className: string
 };
-
-function listStars(position: number) {
-  const stars = [];
-  
-  for (let i = 1; i <= 5; i++) {
-    stars.push(
-      <Star className={`w-2.5 z-10 ${position === 1 ? "text-background fill-background" : "text-tertiary fill-tertiary"}`} />
-    )
-  }
-
-  return stars
-}
 
 export function Top3Card({ position, favlorName, description, image, imageAlt, className }: Props) {
   return (
