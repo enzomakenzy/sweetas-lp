@@ -11,6 +11,8 @@ type Props = {
 };
 
 export function Top3Card({ position, favlorName, description, image, imageAlt, className }: Props) {
+  const color = position === 1 ? "WHITE" : "RED";
+
   return (
     <div className={`${position === 1 ? "bg-primary" : "bg-background"} rounded-2xl px-5 py-6 flex flex-col gap-5 shadow lg:hover:shadow-xl relative overflow-hidden transition lg:hover:-translate-y-3 duration-400 group ${className}`}>
       <p className={`${position === 1 ? "text-background/20" : "text-primary/20"} absolute -right-5 -top-16 text-[142px] font-bold z-0`}>{position}</p>
@@ -19,7 +21,7 @@ export function Top3Card({ position, favlorName, description, image, imageAlt, c
         <p className={`${position === 1 ? "bg-background" : "bg-tertiary/12"} text-primary px-3 py-1 text-xs rounded-4xl font-bold`}>{position === 1 && "👑"} # {position}</p>
 
         <div className="flex gap-1">
-          {listStars(position)}
+          {listStars(color)}
         </div>
       </div>
 
