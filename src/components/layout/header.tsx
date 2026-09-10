@@ -1,4 +1,4 @@
-import logo from "@/assets/images/main-logo.png" 
+import logo from "@/assets/images/main-logo.svg" 
 import { Button } from "../ui/button";
 
 export function Header() {
