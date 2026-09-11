@@ -8,8 +8,8 @@ export function Menu() {
     <section className="py-12 px-4 lg:px-12">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="font-accent text-2xl text-secondary">cardápio</h2>
-          <h1 className="text-primary font-heading font-bold text-5xl sm:text-6xl lg:text-7xl pb-3">Menu</h1>
+          <h3 className="font-accent text-2xl text-secondary">cardápio</h3>
+          <h2 className="text-primary font-heading font-bold text-5xl sm:text-6xl lg:text-7xl pb-3">Menu</h2>
           <p className="text-quaternary lg:text-lg">Cada coninho é montado na hora. Toque em uma foto para ver os detalhes.</p>
         </div>
 
