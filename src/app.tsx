@@ -1,6 +1,7 @@
 import { Footer } from "./components/layout/footer";
 import { Header } from "./components/layout/header";
 import { Banner } from "./components/sections/banner";
+import { Contact } from "./components/sections/contact";
 import { Marquee } from "./components/sections/marquee";
 import { Menu } from "./components/sections/menu";
 import { Quality } from "./components/sections/quality";
@@ -18,6 +19,7 @@ export default function App() {
         <Menu />
         <Quality />
         <Reviews />
+        <Contact />
         <Footer />
       </div>
     </div>
