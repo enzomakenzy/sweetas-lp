@@ -31,6 +31,37 @@ export function Contact() {
             <div className="flex items-center gap-2"><Motorbike size={16} /> Entrega rápida</div>
           </div>
         </div>
+        <div className="bg-background p-7">
+          <h3 className="flex items-center gap-2 font-bold uppercase tracking-[0.13rem] text-xs text-primary mb-7">
+            <hr className="border-none w-5 h-px bg-primary" /> Monte seu Pedido
+          </h3>
+
+          <ul className="flex flex-col gap-5 *:flex *:gap-4 *:items-start **:[span]:flex **:[span]:items-center **:[span]:justify-center **:[span]:shrink-0 **:[span]: **:[span]:text-lg **:[span]:font-bold **:[span]:text-primary **:[span]:rounded-full **:[span]:w-10 **:[span]:h-10 **:[span]:mt-0.5 **:[span]:border-2 **:[span]:border-primary/20 **:[span]:bg-primary/5 **:[h4]:font-heading **:[h4]:font-bold **:[h4]:text-primary **:[h4]:uppercase **:[p]:text-sm">
+            <li>
+              <span>01</span>
+              <div>
+                <h4>Escolha os sabores e quantidades</h4>
+                <p>Misture quantos sabores quiser, no jeito que preferir.</p>
+              </div>
+            </li>
+
+            <li>
+              <span>02</span>
+              <div>
+                <h4>Veja o total calculado na hora</h4>
+                <p>O valor é somado automaticamente conforme você monta.</p>
+              </div>
+            </li>
+            
+            <li>
+              <span>03</span>
+              <div>
+                <h4>Confirme no WhatsApp antes de pagar</h4>
+                <p>Sem compromisso — você só finaliza depois de revisar tudo na conversa.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   );
