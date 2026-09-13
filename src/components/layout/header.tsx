@@ -1,5 +1,6 @@
 import logo from "@/assets/images/main-logo.svg" 
 import { Button } from "../ui/button";
+import { NavLink } from "react-router";
 
 export function Header() {
   return (
@@ -13,15 +14,15 @@ export function Header() {
       </a>
 
       <nav className="hidden lg:flex lg:items-center lg:justify-center lg:gap-12 *:font-semibold *:text-primary *:hover:text-accent *:text-xl">
-        <a href="/#inicio">Início</a>
-        <a href="/#cardapio">Cardápio</a>
-        <a href="/#sobre">Sobre</a>
+        <NavLink to="/">Início</NavLink>
+        <a href="#">Cardápio</a>
+        <NavLink to="/sobre">Sobre</NavLink>
       </nav>
 
       <div className="flex justify-end">
-        <a href="/#peca-ja">
+        <NavLink to="/pedido">
           <Button size="default">Peça já</Button>
-        </a>
+        </NavLink>
       </div>
     </header>
   );

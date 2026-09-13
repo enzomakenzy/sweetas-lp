@@ -1,7 +1,7 @@
 export default function Order() {
   return (
     <main>
-      oi
+      Pedido
     </main>
   )
 }

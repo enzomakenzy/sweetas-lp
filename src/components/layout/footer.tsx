@@ -1,5 +1,6 @@
 import logoWhite from "@/assets/images/white-logo.svg";
 import lumeLogo from "@/assets/images/lume-logo.svg";
+import { NavLink } from "react-router";
 
 export function Footer() {
   return (
@@ -10,11 +11,12 @@ export function Footer() {
 
           <p className="text-background/80 text-center text-sm">© 2026 Sweet A's Doceria — Feito com <span className="text-secondary">♥</span> e muito chocolate.</p>
 
-          <ul className="flex gap-5 font-semibold text-background">
-            <li>Cardápio</li>
-            <li>Pedido</li>
-            <li>Contato</li>
-          </ul>
+          <nav className="flex gap-5 font-semibold text-background">
+            <NavLink to="/">Início</NavLink>
+            <a href="#">Cardápio</a>
+            <NavLink to="/pedido">Pedido</NavLink>
+            <NavLink to="/sobre">Sobre</NavLink>
+          </nav>
         </div>
 
         <hr className="border-none h-px bg-background/30 w-full" />

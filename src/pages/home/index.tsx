@@ -1,5 +1,3 @@
-import { Footer } from "@/components/layout/footer";
-import { Header } from "@/components/layout/header";
 import { Banner } from "@/pages/home/sections/banner";
 import { Marquee } from "@/pages/home/sections/marquee";
 import { Top3 } from "@/pages/home/sections/top-3";
