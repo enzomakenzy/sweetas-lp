@@ -1,4 +1,4 @@
-import { Diamond, Heart } from "lucide-react";
+import { Diamond, Heart, Spade } from "lucide-react";
 import { Button } from "../ui/button";
 import bannerImg from "@/assets/images/cone-nutinho-morango.png";
 
@@ -14,14 +14,16 @@ export function Banner() {
           </div>
 
           <div className="flex flex-col items-start gap-3 sm:flex-row">
-            <Button size="lg">Ver cardápio</Button>
-            <Button size="lg" variant="outline" className="inset-ring-2 inset-ring-primary">Pedir no WhatsApp</Button>
+            <Button size="lg" className="relative overflow-hidden">
+              <span aria-hidden className="animate-button-shine pointer-events-none absolute top-0 bottom-0 w-1/3 bg-white/25"/>Montar pedido
+            </Button>
+            <Button size="lg" variant="outline" className="inset-ring-2 inset-ring-primary">Ver cardápio</Button>
           </div>
 
-          <ul className="flex gap-4">
-            <li className="text-sm text-quaternary flex items-center gap-1 md:text-base"><Heart className="inline h-4 w-4 text-tertiary fill-tertiary" /> +500 pedidos</li>
-            <li className="text-sm text-quaternary flex items-center gap-1 md:text-base"><Diamond className="inline h-4 w-4 text-secondary fill-secondary" /> 6 sabores</li>
-            <li className="text-sm text-quaternary flex items-center gap-1 md:text-base"><Heart className="inline h-4 w-4 text-tertiary fill-tertiary" /> feito na hora</li>
+          <ul className="flex gap-4 *:text-sm *:text-quaternary *:flex *:items-center *:gap-1 *:md:text-base [&>li>svg]:inline [&>li>svg]:h-4 [&>li>svg]:w-4">
+            <li><Heart className="fill-tertiary text-tertiary" /> +500 pedidos</li>
+            <li><Diamond className="text-secondary fill-secondary" /> 6 sabores</li>
+            <li><Spade className="fill-tertiary text-tertiary" /> feito na hora</li>
           </ul>
         </div>
 

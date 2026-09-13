@@ -62,7 +62,6 @@
   --breakpoint-1xl: 83.125rem; /* 1330px */
 
   --animate-marquee: marquee 60s linear infinite;
-
   @keyframes marquee {
     0% {
       transform: translateX(0);
@@ -70,6 +69,12 @@
     100% {
       transform: translateX(-50%);
     }
+  }
+
+  --animate-button-shine: button-shine 3.6s ease-in-out infinite;
+  @keyframes button-shine {
+  0% { transform: translateX(-200%) skewX(-20deg); }
+  60%, 100% { transform: translateX(250%) skewX(-20deg); }
   }
 }
 
