@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 export function Contact() {
   return (
-    <section className="py-12 px-4 lg:px-12 bg-quinary">
+    <section className="py-16 px-4 lg:px-12 bg-quinary">
       <div className="max-w-7xl mx-auto flex flex-col shadow-lg rounded-2xl overflow-hidden lg:flex-row">
         <div className="bg-primary p-7 lg:p-10 lg:flex-[1.4]">
           <h3 className="text-secondary font-accent text-2xl mb-1">pedido e contato</h3>
@@ -26,9 +26,9 @@ export function Contact() {
             </Button>
           </div>
 
-          <div className="text-background/70 font-bold text-xs uppercase tracking-widest flex flex-col gap-1 lg:flex-row lg:items-center lg:gap-3">
-            <div className="flex items-center gap-2"><Clock4 size={16} /> Resposta em minutos</div>
-            <div className="flex items-center gap-2"><Motorbike size={16} /> Entrega rápida</div>
+          <div className="text-background/70 font-bold text-xs uppercase tracking-widest flex flex-col gap-1 lg:flex-row lg:items-center lg:gap-3 *:flex *:items-center *:gap-2">
+            <div className=""><Clock4 size={16} /> Resposta em minutos</div>
+            <div className=""><Motorbike size={16} /> Entrega rápida</div>
           </div>
         </div>
 

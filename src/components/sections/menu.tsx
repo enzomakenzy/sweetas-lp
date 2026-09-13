@@ -5,7 +5,7 @@ import coneOreo from "@/assets/images/cone-oreo.png";
 
 export function Menu() {
   return (
-    <section className="py-12 px-4 lg:px-12">
+    <section className="py-16 px-4 lg:px-12">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
           <h3 className="font-accent text-2xl text-secondary">cardápio</h3>
