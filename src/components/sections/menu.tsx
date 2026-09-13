@@ -17,7 +17,7 @@ export function Menu() {
           <MenuCard 
             favlorName="brigadeiro"
             description="Crocantíssima casquinha de baunilha recheada com brigadeiro caseiro, coberta com gotas de chocolate ou disquete."
-            price="7"
+            price="7,00"
             image={coneOvomaltine}
             imageAlt="Cone com recheio de brigadeiro"
           />
@@ -25,7 +25,7 @@ export function Menu() {
           <MenuCard 
             favlorName="KitKat"
             description="Casquinha de baunilha recheada com pasta de Kit Kat, finalizada com pedaços do chocolate."
-            price="9"
+            price="9,00"
             image={coneOreo}
             imageAlt="Cone com recheio de KitKat"
           />
@@ -33,7 +33,7 @@ export function Menu() {
           <MenuCard 
             favlorName="Ouro Branco"
             description="Casquinha de baunilha com brigadeiro branco caseiro e pedaços de Ouro Branco, finalizada com chocolate."
-            price="9"
+            price="9,00"
             image={coneNutinhoMorango}
             imageAlt="Cone com recheio de Ouro Branco"
           />
@@ -41,7 +41,7 @@ export function Menu() {
           <MenuCard
             favlorName="Ovomaltine"
             description="Casquinha polvilhada com ovomaltine, recheada com creme caseiro do mesmo e finalizada com o pó."
-            price="10"
+            price="10,00"
             image={coneOvomaltine}
             imageAlt="Cone com recheio de Ovomaltine"
           />
@@ -49,7 +49,7 @@ export function Menu() {
           <MenuCard 
             favlorName="Oreo"
             description="Camadas de brigadeiro branco caseiro com pedaços de Oreo, finalizada com a bolacha."
-            price="10"
+            price="10,00"
             image={coneOreo}
             imageAlt="Cone com recheio do biscoito da marca Oreo"
           />
@@ -57,7 +57,7 @@ export function Menu() {
           <MenuCard
             favlorName="Nutinho c/ Morango"
             description="Camadas de Ninho, Nutella e pedaços de morango, finalizada com morango fresco."
-            price="10"
+            price="10,00"
             image={coneNutinhoMorango}
             imageAlt="Cone de creme de avelã com morango"
           />

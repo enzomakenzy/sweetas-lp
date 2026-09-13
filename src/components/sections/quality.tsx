@@ -3,7 +3,7 @@ import { QualityCard } from "../common/quality-card";
 
 export function Quality() {
   return (
-    <section className="bg-primary text-background px-4 py-12">
+    <section className="bg-primary text-background px-4 py-12 lg:px-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-15 items-center">
         <div>
           <div className="flex gap-3 text-background/70 items-center">
