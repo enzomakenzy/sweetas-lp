@@ -4,7 +4,7 @@ import bannerImg from "@/assets/images/cone-nutinho-morango.png";
 
 export function Banner() {
   return (
-    <section className="px-3 pt-28 pb-6 lg:pt-34 md:px-11 lg:px-12 lg:grid-cols-2 lg:gap-6 lg:items-center">
+    <section className="px-3 pt-4 pb-6 lg:pt-10 md:px-11 lg:px-12 lg:grid-cols-2 lg:gap-6 lg:items-center">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-6 lg:items-center">
         <div className="flex flex-col gap-8 mb-8">
           <div>

@@ -4,7 +4,7 @@ import { NavLink } from "react-router";
 
 export function Header() {
   return (
-    <header className="grid grid-cols-2 py-3 px-4 lg:grid-cols-3 lg:px-20 xl:px-30 2xl:px-40 items-center top-0 fixed z-30 bg-background w-full">
+    <header className="grid grid-cols-2 py-3 px-4 lg:grid-cols-3 lg:px-20 xl:px-30 2xl:px-40 items-center top-0 sticky z-30 bg-background w-full">
       <a href="#">
         <img 
           src={logo}
