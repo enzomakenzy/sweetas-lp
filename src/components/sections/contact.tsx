@@ -37,8 +37,8 @@ export function Contact() {
             <hr className="border-none w-5 h-px bg-primary" /> Monte seu Pedido
           </h3>
 
-          <ul className="flex flex-col flex-1 gap-5 *:flex *:gap-4 *:items-start **:[span]:flex **:[span]:items-center **:[span]:justify-center **:[span]:shrink-0 **:[span]:text-lg **:[span]:font-bold **:[span]:text-primary **:[span]:rounded-full **:[span]:w-10 **:[span]:h-10 **:[span]:mt-0.5 **:[span]:border-2 **:[span]:border-primary/20 **:[span]:bg-primary/5 **:[h4]:font-heading **:[h4]:font-bold **:[h4]:text-primary **:[h4]:uppercase **:[p]:text-sm lg:justify-between lg:**:[span]:text-2xl lg:**:[span]:w-12 lg:**:[span]:h-12 lg:**:[h4]:text-xl lg:**:[p]:text-base">
-            <li>
+          <ul className="flex flex-col flex-1 gap-5 *:flex *:gap-4 *:items-start **:[span]:flex **:[span]:items-center **:[span]:justify-center **:[span]:shrink-0 **:[span]:text-lg **:[span]:font-bold **:[span]:text-primary **:[span]:rounded-full **:[span]:w-10 **:[span]:h-10 **:[span]:mt-0.5 **:[span]:border-2 **:[span]:border-primary/20 **:[span]:bg-primary/5 **:[h4]:font-heading **:[h4]:font-bold **:[h4]:text-primary **:[h4]:uppercase **:[p]:text-sm lg:justify-between lg:**:[span]:text-2xl lg:**:[span]:w-12 lg:**:[span]:h-12 lg:**:[h4]:text-xl lg:**:[p]:text-base **:[span]:transition **:[span]:duration-250 **:[span]:group-hover:border-primary/50">
+            <li className="group">
               <span>01</span>
               <div>
                 <h4>Escolha os sabores e quantidades</h4>
@@ -46,7 +46,7 @@ export function Contact() {
               </div>
             </li>
 
-            <li>
+            <li className="group">
               <span>02</span>
               <div>
                 <h4>Veja o total calculado na hora</h4>
@@ -54,7 +54,7 @@ export function Contact() {
               </div>
             </li>
             
-            <li>
+            <li className="group">
               <span>03</span>
               <div>
                 <h4>Confirme no WhatsApp antes de pagar</h4>
