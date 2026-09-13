@@ -1,4 +1,4 @@
-import { ReviewCard } from "../common/review-card";
+import { ReviewCard } from "../../../components/common/review-card";
 
 export function Reviews() {
   return (

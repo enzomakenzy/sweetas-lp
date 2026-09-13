@@ -1,4 +1,4 @@
-import { Top3Card } from "../common/top-3-card";
+import { Top3Card } from "../../../components/common/top-3-card";
 import coneNutinhoMorango from "@/assets/images/cone-nutinho-morango.png";
 import coneOvomaltine from "@/assets/images/cone-ovomaltine.png";
 import coneOreo from "@/assets/images/cone-oreo.png";

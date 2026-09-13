@@ -1,5 +1,5 @@
 import { Diamond, Heart, Spade } from "lucide-react";
-import { Button } from "../ui/button";
+import { Button } from "../../../components/ui/button";
 import bannerImg from "@/assets/images/cone-nutinho-morango.png";
 
 export function Banner() {

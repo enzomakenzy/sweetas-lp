@@ -1,4 +1,4 @@
-import { MenuCard } from "../common/menu-card";
+import { MenuCard } from "../../../components/common/menu-card";
 import coneNutinhoMorango from "@/assets/images/cone-nutinho-morango.png";
 import coneOvomaltine from "@/assets/images/cone-ovomaltine.png";
 import coneOreo from "@/assets/images/cone-oreo.png";

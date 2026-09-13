@@ -1,5 +1,5 @@
 import { Club, Diamond, Heart, Spade } from "lucide-react";
-import { QualityCard } from "../common/quality-card";
+import { QualityCard } from "../../../components/common/quality-card";
 
 export function Quality() {
   return (
