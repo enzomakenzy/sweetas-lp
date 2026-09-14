@@ -187,6 +187,7 @@
     }
   html {
     @apply font-sans;
+    scroll-behavior: smooth;
     }
   h1 {
     @apply font-heading;
