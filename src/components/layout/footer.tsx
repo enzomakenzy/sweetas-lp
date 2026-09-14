@@ -13,7 +13,7 @@ export function Footer() {
 
           <nav className="flex gap-5 font-semibold text-background">
             <NavLink to="/">Início</NavLink>
-            <a href="#">Cardápio</a>
+            <NavLink to="/#cardapio">Cardápio</NavLink>
             <NavLink to="/pedido">Pedido</NavLink>
             <NavLink to="/sobre">Sobre</NavLink>
           </nav>

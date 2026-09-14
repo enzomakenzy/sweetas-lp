@@ -1,5 +1,6 @@
 import { Diamond } from "lucide-react"
 import { Button } from "../ui/button";
+import { NavLink } from "react-router";
 
 type Props = {
   favlorName: string;
@@ -23,9 +24,9 @@ export function MenuCard({ favlorName, price, description, image, imageAlt }: Pr
             <Diamond className="w-3.5 fill-secondary text-secondary" />R$ {price}
           </p>
 
-          <a href="#">
+          <NavLink to="/pedido">
             <Button className="uppercase" size="sm">Fazer pedido</Button>
-          </a>
+          </NavLink>
         </div>  
       </div>
     </div>

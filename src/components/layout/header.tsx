@@ -15,7 +15,7 @@ export function Header() {
 
       <nav className="hidden lg:flex lg:items-center lg:justify-center lg:gap-12 *:font-semibold *:text-primary *:hover:text-accent *:text-xl">
         <NavLink to="/">Início</NavLink>
-        <a href="#">Cardápio</a>
+        <NavLink to="/#cardapio">Cardápio</NavLink>
         <NavLink to="/sobre">Sobre</NavLink>
       </nav>
 
