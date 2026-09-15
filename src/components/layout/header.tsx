@@ -1,5 +1,6 @@
 import logo from "@/assets/images/main-logo.svg";
-import navButton from "@/assets/images/nav-button.svg";
+import menuImg from "@/assets/images/menu.svg";
+import closeImg from "@/assets/images/close-menu.svg";
 import { Button } from "../ui/button";
 import { NavLink } from "react-router";
 import { useEffect, useRef, useState } from "react";
@@ -24,6 +25,7 @@ export function Header() {
       }
 
       lastScrollY.current = currentScrollY;
+      setMenuStatus(false);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -49,7 +51,7 @@ export function Header() {
   }, [menuStatus]);
 
   return (
-    <header className={`transition duration-300 top-0 sticky z-30 bg-background w-full h-18 ${hidden ? "-translate-y-full" : "translate-y-0"}`}>
+    <header className={`transition duration-300 top-0 sticky z-30 bg-background w-full ${hidden ? "-translate-y-full" : "translate-y-0"}`}>
       <div className="relative py-3 h-full w-full flex justify-end items-center md:justify-between">
         <NavLink to="/" className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 md:left-0 md:translate-0 md:top-0 md:static md:pl-12">
           <img 
@@ -73,7 +75,11 @@ export function Header() {
         </div>
 
         <button onClick={() => setMenuStatus(!menuStatus)} ref={buttonRef} className="flex flex-col md:hidden cursor-pointer h-full p-2 mr-4 md:pr-10">
-          <img src={navButton} alt="Menu de páginas" className="w-6" />
+          { menuStatus ? 
+              <img src={closeImg} alt="Menu de páginas" className="w-7" />
+              :
+              <img src={menuImg} alt="Menu de páginas" className="w-7 h-7" />
+          }
         </button>
 
       { menuStatus &&
