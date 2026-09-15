@@ -8,18 +8,19 @@ export function Header() {
   const [menuStatus, setMenuStatus] = useState<boolean>(false); 
   const [hidden, setHidden] = useState(false);
   const lastScrollY = useRef(0);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      // evita esconder logo no topo da página
       if (currentScrollY < 80) {
         setHidden(false);
       } else if (currentScrollY > lastScrollY.current) {
-        setHidden(true); // rolando pra baixo
+        setHidden(true);
       } else {
-        setHidden(false); // rolando pra cima
+        setHidden(false);
       }
 
       lastScrollY.current = currentScrollY;
@@ -29,6 +30,23 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (!menuStatus) return;
+
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target as Node) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target as Node)
+      ) {
+        setMenuStatus(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [menuStatus]);
 
   return (
     <header className={`transition duration-300 top-0 sticky z-30 bg-background w-full h-18 ${hidden ? "-translate-y-full" : "translate-y-0"}`}>
@@ -54,12 +72,12 @@ export function Header() {
           </NavLink>
         </div>
 
-        <button onClick={() => setMenuStatus(!menuStatus)} className="flex flex-col md:hidden cursor-pointer h-full p-2 mr-4 md:pr-10">
-          <img src={navButton} alt="" className="w-6" />
+        <button onClick={() => setMenuStatus(!menuStatus)} ref={buttonRef} className="flex flex-col md:hidden cursor-pointer h-full p-2 mr-4 md:pr-10">
+          <img src={navButton} alt="Menu de páginas" className="w-6" />
         </button>
 
       { menuStatus &&
-        <div className="absolute bg-background top-full w-full p-4 pb-7">
+        <div ref={menuRef} className="absolute bg-background top-full w-full p-4 pb-7">
           <nav className="flex flex-col items-center font-semibold justify-center gap-6 *:text-primary *:hover:text-accent *:text-xl *:w-full *:text-center lg:hidden">
             <NavLink onClick={() => setMenuStatus(false)} to="/">Início</NavLink>
             <NavLink onClick={() => setMenuStatus(false)} to="/#cardapio">Cardápio</NavLink>
@@ -68,7 +86,6 @@ export function Header() {
               <Button size="lg" className="w-full text-lg">Peça já</Button>
             </NavLink>
           </nav>
-
         </div>
       }
       </div>
