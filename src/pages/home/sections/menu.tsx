@@ -1,7 +1,10 @@
 import { MenuCard } from "../../../components/common/menu-card";
 import coneNutinhoMorango from "@/assets/images/cone-nutinho-morango.png";
 import coneOvomaltine from "@/assets/images/cone-ovomaltine.png";
-import coneOreo from "@/assets/images/cone-oreo.png";
+import coneOreo from "@/assets/images/cone-oreo.jpg";
+import coneBrigadeiro from "@/assets/images/cone-brigadeiro.jpg";
+import coneKitkat from "@/assets/images/cone-kitkat.jpg";
+import coneOuroBranco from "@/assets/images/core-ouro-branco.jpg";
 
 export function Menu() {
   return (
@@ -18,7 +21,7 @@ export function Menu() {
             favlorName="brigadeiro"
             description="Crocantíssima casquinha de baunilha recheada com brigadeiro caseiro, coberta com gotas de chocolate ou disquete."
             price="7,00"
-            image={coneOvomaltine}
+            image={coneBrigadeiro}
             imageAlt="Cone com recheio de brigadeiro"
           />
 
@@ -26,7 +29,7 @@ export function Menu() {
             favlorName="KitKat"
             description="Casquinha de baunilha recheada com pasta de Kit Kat, finalizada com pedaços do chocolate."
             price="9,00"
-            image={coneOreo}
+            image={coneKitkat}
             imageAlt="Cone com recheio de KitKat"
           />
 
@@ -34,7 +37,7 @@ export function Menu() {
             favlorName="Ouro Branco"
             description="Casquinha de baunilha com brigadeiro branco caseiro e pedaços de Ouro Branco, finalizada com chocolate."
             price="9,00"
-            image={coneNutinhoMorango}
+            image={coneOuroBranco}
             imageAlt="Cone com recheio de Ouro Branco"
           />
 
