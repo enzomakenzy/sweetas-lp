@@ -5,7 +5,7 @@ import coneOreo from "@/assets/images/cone-oreo.jpg";
 
 export function Top3() {
   return (
-    <section className="px-4 pt-16 md:px-11 lg:px-12 bg-quinary pb-20">
+    <section className="px-4 pt-16 md:px-11 lg:px-12 bg-background pb-20">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-4 mx-auto justify-center">
           <div className="h-px w-7 bg-primary"></div>
