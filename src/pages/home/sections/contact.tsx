@@ -32,7 +32,7 @@ export function Contact() {
           </div>
         </div>
 
-        <div className="bg-background p-7 lg:p-10 lg:flex lg:flex-col lg:flex-1">
+        <div className="bg-card p-7 lg:p-10 lg:flex lg:flex-col lg:flex-1">
           <h3 className="flex items-center gap-2 font-bold uppercase tracking-[0.13rem] text-xs text-primary mb-7 lg:text-sm">
             <hr className="border-none w-5 h-px bg-primary" /> Monte seu Pedido
           </h3>
