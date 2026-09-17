@@ -61,7 +61,7 @@
   --breakpoint-2md: 56.25rem; /* 900px */
   --breakpoint-1xl: 83.125rem; /* 1330px */
 
-  --animate-marquee: marquee 60s linear infinite;
+  --animate-marquee: marquee 70s linear infinite;
   @keyframes marquee {
     0% {
       transform: translateX(0);
@@ -192,10 +192,15 @@
 
 @utility card {
   display: inline;
-  height: 1rem;
-  width: 1rem;
-  fill: var(--secondary);
-  color: var(--secondary)
+  height: 1.15rem;
+  width: 1.15rem;
+  fill: var(--card);
+  color: var(--card)
+
+  @media screen and (min-width: 768px) {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
 }
 
 @layer base {
