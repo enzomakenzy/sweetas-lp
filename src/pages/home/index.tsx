@@ -5,6 +5,7 @@ import { Menu } from "@/pages/home/sections/menu";
 import { Quality } from "@/pages/home/sections/quality";
 import { Reviews } from "@/pages/home/sections/reviews";
 import { Contact } from "@/pages/home/sections/contact";
+import TextLoop from "@/components/text-loop/TextLoop";
 
 export default function Home() {
   return (
@@ -26,6 +27,24 @@ export default function Home() {
           </svg>
         </div>
         <Reviews />
+        <TextLoop
+          text="Mais Chocolate Por Favor ✦ Bateu Vontade? ✦ Sweet A's ✦ Peça o seu"
+          shape="wave"
+          speed={40}
+          separator="✦"
+          direction="reverse"
+          curviness={10}
+          fontSize={22}
+          fontWeight={800}
+          letterSpacing={2}
+          uppercase
+          color="#ffffff"
+          ribbon
+          ribbonColor="#a8090b"
+          ribbonWidth={56}
+          pauseOnHover={false}
+          className="bg-linear-to-b from-background from-50% to-quinary to-50% font-sans"
+        />
         <Contact />
       </div>
     </div>
