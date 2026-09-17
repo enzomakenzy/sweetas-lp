@@ -12,7 +12,7 @@ type Props = {
 
 export function MenuCard({ favlorName, price, description, image, imageAlt }: Props) {
   return (
-    <div className="rounded-2xl overflow-hidden border-2 border-quaternary/50 relative transition-all duration-400 lg:hover:shadow-2xl lg:max-w-full bg-card lg:hover:border-primary lg:hover:-translate-y-2 group h-full flex flex-col">
+    <div className="rounded-2xl overflow-hidden border-2 border-quaternary/50 relative transition-all duration-400 lg:max-w-full bg-card lg:hover:border-primary group h-full flex flex-col">
       <img src={image} alt={imageAlt} className="h-72 xs:h-96 sm:h-72 2md:h-96 w-full object-cover object-top transition duration-400 group-hover:lg:scale-105 group-hover:lg:-translate-y-2" />
 
       <div className="p-5 flex flex-col flex-1">
