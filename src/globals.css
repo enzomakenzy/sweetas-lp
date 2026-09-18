@@ -96,6 +96,16 @@
       transform: translateX(50%);
     }
   }
+
+  --animate-ring-spin: ring-spin 30s linear infinite;
+  @keyframes ring-spin {
+    0% {
+      rotate: 0deg;
+    }
+    100% {
+      rotate: 360deg;
+    }
+  }
 }
 
 :root {
@@ -213,7 +223,7 @@
   html {
     @apply font-sans;
     scroll-behavior: smooth;
-    }
+  }
   h1 {
     @apply font-heading;
   }
