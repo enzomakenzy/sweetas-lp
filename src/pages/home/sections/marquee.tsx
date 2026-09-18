@@ -3,7 +3,7 @@ import { Club, Diamond, Heart, Spade } from "lucide-react";
 export function Marquee() {
   return (
     <section className="overflow-hidden bg-primary w-full mt-14">
-      <div className="flex py-4 md:py-5 animate-marquee w-max font-sans font-bold text-white text-2xl md:text-[26px] tracking-widest">
+      <div className="flex py-4 md:py-5 animate-marquee w-max font-sans font-bold text-white text-2xl md:text-xl tracking-widest">
         <span className="uppercase flex gap-4 whitespace-nowrap pr-4 items-center *:card">
           Brigadeiro<Heart />
           KitKat<Spade />
