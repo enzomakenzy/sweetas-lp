@@ -26,7 +26,7 @@ export function Top3() {
             description="o mais pedido"
             image={coneNutinhoMorango} 
             imageAlt="Cone de nutinho de morango"
-            className="order-1 md:order-2 md:translate-y-12"
+            className="order-1 md:order-2 md:translate-y-20"
           />
 
           <Top3Circle
@@ -35,7 +35,7 @@ export function Top3() {
             description="crocância máxima"
             image={coneOvomaltine}
             imageAlt="Cone de ovomaltine"
-            className="order-2 md:order-1 md:top-5 md:-translate-y-12 w-[90%]"
+            className="order-2 md:order-1 md:top-5 md:-translate-y-12 md:w-[90%]"
           />
  
           <Top3Circle 
@@ -44,7 +44,7 @@ export function Top3() {
             description="cremosidade absurda"
             image={coneOreo}
             imageAlt="Cone de Oreo"
-            className="order-3 md:top-5 md:-translate-y-22 w-[82%]"
+            className="order-3 md:top-5 md:-translate-y-22 md:w-[82%]"
           />
         </div>
 
