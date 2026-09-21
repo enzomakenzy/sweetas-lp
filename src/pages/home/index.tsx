@@ -14,16 +14,21 @@ export default function Home() {
         <Banner />
         <Marquee />
         <Top3 />
+        <div className="w-full overflow-hidden h-20">
+          <svg viewBox="0 0 1200 130" preserveAspectRatio="none" className="w-[200%] h-20 md:h-24 animate-wave-inverse rotate-180">
+            <path d="M0,60 C200,130 400,0 600,60 C800,130 1000,0 1300,60 L1300,130 L0,130 Z" className="fill-quinary" />
+          </svg>
+        </div>
         <Menu />
         <div className="w-full overflow-hidden h-20">
-          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-[200%] h-20 md:h-24 animate-wave">
-            <path d="M0,60 C200,120 400,0 600,60 C800,120 1000,0 1200,60 L1200,120 L0,120 Z" className="fill-primary" />
+          <svg viewBox="0 0 1200 130" preserveAspectRatio="none" className="w-[200%] h-20 md:h-24 animate-wave">
+            <path d="M0,60 C200,130 400,0 600,60 C800,130 1000,0 1300,60 L1300,130 L0,130 Z" className="fill-primary" />
           </svg>
         </div>
         <Quality />
         <div className="w-full overflow-hidden h-20">
-          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-[200%] h-16 md:h-24 animate-wave-inverse rotate-180">
-            <path d="M0,60 C200,120 400,0 600,60 C800,120 1000,0 1200,60 L1200,120 L0,120 Z" className="fill-primary" />
+          <svg viewBox="0 0 1200 130" preserveAspectRatio="none" className="w-[200%] h-20 md:h-24 animate-wave-inverse rotate-180">
+            <path d="M0,60 C200,130 400,0 600,60 C800,130 1000,0 1300,60 L1300,130 L0,130 Z" className="fill-primary" />
           </svg>
         </div>
         <Reviews />
