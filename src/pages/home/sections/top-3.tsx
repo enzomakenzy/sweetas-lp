@@ -5,7 +5,7 @@ import { Top3Circle } from "@/components/common/top-3-circle";
 
 export function Top3() {
   return (
-    <section className="px-4 pt-25 pb-40 lg:px-12 bg-quinary">
+    <section className="px-4 pt-25 pb-20 lg:pb-40 lg:px-12 bg-quinary">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-4 mx-auto justify-center">
           <div className="h-px w-7 bg-primary"></div>
