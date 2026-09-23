@@ -77,7 +77,7 @@
     60%, 100% { transform: translateX(250%) skewX(-20deg); }
   }
 
-  --animate-wave: wave 10s linear infinite;
+  --animate-wave: wave 12s linear infinite;
   @keyframes wave {
     0% {
       transform: translateX(0);
@@ -87,7 +87,7 @@
     }
   }
 
-  --animate-wave-inverse: wave-inverse 10s linear infinite;
+  --animate-wave-inverse: wave-inverse 12s linear infinite;
   @keyframes wave-inverse {
     0% {
       transform: translateX(0);
