@@ -27,18 +27,6 @@ export default function Home() {
           </svg>
         </div>
         <Quality />
-        <div className="w-full overflow-hidden h-20 bg-quinary">
-          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-[200%] h-16 md:h-24 animate-wave-inverse rotate-180">
-            <path d="M0,60 C200,120 400,0 600,60 C800,120 1000,0 1200,60 L1200,120 L0,120 Z" className="fill-primary" />
-          </svg>
-        </div>
-        <Reviews />
-        <div className="w-full overflow-hidden h-20">
-          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-[200%] h-16 md:h-24 animate-wave-inverse rotate-180">
-            <path d="M0,60 C200,120 400,0 600,60 C800,120 1000,0 1200,60 L1200,120 L0,120 Z" className="fill-quinary" />
-          </svg>
-        </div>
-        <Social />
         <TextLoop
           text="Mais Chocolate Por Favor ✦ Bateu Vontade? ✦ Sweet A's ✦ Peça o seu"
           shape="wave"
@@ -46,17 +34,19 @@ export default function Home() {
           separator="✦"
           direction="reverse"
           curviness={10}
-          fontSize={22}
+          fontSize={18}
           fontWeight={800}
           letterSpacing={2}
           uppercase
-          color="#ffffff"
+          color="#a8090b"
           ribbon
-          ribbonColor="#a8090b"
-          ribbonWidth={56}
+          ribbonColor="#efe0e0"
+          ribbonWidth={48}
           pauseOnHover={false}
-          className="bg-linear-to-b from-background from-50% to-quinary to-50% font-sans"
+          className="bg-linear-to-b from-primary from-50% to-quaternary to-50% font-sans"
         />
+        <Social />
+        <Reviews />
         <Contact />
       </div>
     </div>
