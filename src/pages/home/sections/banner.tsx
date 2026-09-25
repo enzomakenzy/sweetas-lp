@@ -1,6 +1,7 @@
 import { Diamond, Heart, Spade } from "lucide-react";
 import { Button } from "../../../components/ui/button";
 import bannerImg from "@/assets/images/cone-nutinho-morango.png";
+import { Link } from "react-router";
 
 export function Banner() {
   return (
@@ -14,10 +15,15 @@ export function Banner() {
           </div>
 
           <div className="flex flex-col items-start gap-3 sm:flex-row">
-            <Button size="lg" className="relative overflow-hidden">
-              <span aria-hidden className="animate-button-shine pointer-events-none absolute top-0 bottom-0 w-1/3 bg-white/25"/>Montar pedido
-            </Button>
-            <Button size="lg" variant="outline" className="inset-ring-2 inset-ring-primary">Ver cardápio</Button>
+            <Link to="/pedido">
+              <Button size="lg" className="relative overflow-hidden">
+                <span aria-hidden className="animate-button-shine pointer-events-none absolute top-0 bottom-0 w-1/3 bg-white/25"/>Montar pedido
+              </Button>
+            </Link>
+
+            <Link to="/#cardapio">
+              <Button size="lg" variant="outline" className="inset-ring-2 inset-ring-primary">Ver cardápio</Button>
+            </Link>
           </div>
 
           <ul className="flex gap-4 *:text-sm *:text-quaternary *:flex *:items-center *:gap-1 *:md:text-base [&>li>svg]:inline [&>li>svg]:h-4 [&>li>svg]:w-4">
