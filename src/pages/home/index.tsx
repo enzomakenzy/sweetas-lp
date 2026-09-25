@@ -46,6 +46,11 @@ export default function Home() {
           className="bg-linear-to-b from-primary from-50% to-quaternary to-50% font-sans"
         />
         <Social />
+        <div className="w-full overflow-hidden h-20">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-[200%] h-16 md:h-24 animate-wave-inverse rotate-180">
+            <path d="M0,60 C200,120 400,0 600,60 C800,120 1000,0 1200,60 L1200,120 L0,120 Z" className="fill-quaternary" />
+          </svg>
+        </div>
         <Reviews />
         <Contact />
       </div>
