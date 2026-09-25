@@ -6,7 +6,7 @@ export function Contact() {
     <section className="py-22 px-4 lg:px-12 bg-quinary">
       <div className="max-w-7xl mx-auto flex flex-col shadow-lg rounded-2xl overflow-hidden lg:flex-row">
         <div className="bg-primary p-7 lg:p-10 lg:flex-[1.4]">
-          <h3 className="text-secondary font-accent text-2xl mb-1">pedido e contato</h3>
+          <h3 className="font-accent text-2xl mb-1 text-background">pedido e contato</h3>
           <h2 className="text-3xl font-heading font-bold text-background mb-6 lg:text-5xl">Bateu vontade? A gente entrega.</h2>
           <p className="text-sm text-background/90 mb-8 lg:text-base">Escolha seus sabores, ajuste as quantidades e veja o total na hora. Seu pedido vai pronto para o WhatsApp, sem enrolação.</p>
 
