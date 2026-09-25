@@ -10,14 +10,13 @@ export function Social() {
         <h3 className="font-accent text-3xl text-background pb-1">nosso feed</h3>
         <h2 className="font-heading font-bold text-4xl text-background mb-14 px-4 lg:text-6xl">Doçura que dá like</h2>
 
-
         <div className="relative">
-          <a href="https://www.instagram.com/sweetasdoceria" target="_blank" rel="external"  className="absolute z-10 flex items-center gap-2 bg-quaternary px-5 py-2 rounded-full ring-2 ring-background rotate-10 right-10 sm:right-36 md:right-auto md:left-1/2">
+          <a href="https://www.instagram.com/sweetasdoceria" target="_blank" rel="external" className="absolute z-10 flex items-center gap-2 bg-quaternary px-5 py-2 rounded-full ring-2 ring-background rotate-10 right-10 sm:right-36 md:right-auto md:left-1/2 transition hover:translate-x-2 hover:-translate-y-2 hover:scale-115">
             <img src={instagramLogo} alt="Logo do Instagram" className="w-6" />
             <p className="text-sm uppercase text-background font-bold">sweetasdoceria</p>
           </a>
 
-          <div className="w-full *:transition-all *:duration-250 flex overflow-x-auto py-4 gap-12 snap-x snap-mandatory *:w-72 *:rounded-2xl *:ring-2 *:ring-background *:snap-center md:snap-none *:shrink-0 scrollbar-none md:overflow-visible md:justify-center md:*:w-auto md:*:shrink md:*:flex-1 md:*:min-w-0 md:gap-16 *:backface-hidden *:will-change-transform">
+          <div className="w-full *:transition-all *:duration-250 flex overflow-x-auto py-4 gap-12 snap-x snap-mandatory *:w-72 *:rounded-2xl *:ring-2 *:ring-background *:snap-center md:snap-none *:shrink-0 scrollbar-none md:overflow-visible md:justify-center md:*:w-auto md:*:shrink md:*:flex-1 md:*:min-w-0 md:gap-16 *:backface-hidden *:will-change-transform *:hover:rotate-0 *:hover:-translate-y-1 *:hover:scale-105">
 
             <img src={photo1} alt="Foto 1" className="rotate-4 ml-8" />
             <img src={photo2} alt="Foto 2" className="-rotate-4" />

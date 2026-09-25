@@ -3,7 +3,7 @@ import { Button } from "../../../components/ui/button";
 
 export function Contact() {
   return (
-    <section className="py-22 px-4 lg:px-12 bg-quinary">
+    <section className="pt-10 pb-20 px-4 lg:px-12 shadow-xl">
       <div className="max-w-7xl mx-auto flex flex-col shadow-lg rounded-2xl overflow-hidden lg:flex-row">
         <div className="bg-primary p-7 lg:p-10 lg:flex-[1.4]">
           <h3 className="font-accent text-2xl mb-1 text-background">pedido e contato</h3>
