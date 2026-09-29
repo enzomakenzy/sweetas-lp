@@ -9,16 +9,21 @@ import { ScrollToHash } from "@/utils/scroll-to-hash";
 export function AppRoutes() {
   return (
     <BrowserRouter>
-      <ScrollToHash />
-      <Header />
+      <div className="bg-primary">
+        <ScrollToHash />
 
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="/pedido" element={<Order />} />
-        <Route path="/sobre" element={<About />} />
-      </Routes>
+        <div className="relative z-10">
+          <Header />
 
-      <Footer />
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="/pedido" element={<Order />} />
+            <Route path="/sobre" element={<About />} />
+          </Routes>
+        </div>
+
+        <Footer />
+      </div>
     </BrowserRouter>
   )
 }

@@ -4,10 +4,37 @@ import instagramLogo from "@/assets/images/instagram-logo.svg";
 import whatsappLogo from "@/assets/images/whatsapp-logo.svg";
 import { NavLink } from "react-router";
 import { Mail } from "lucide-react";
+import { motion, useScroll, useTransform } from "motion/react";
+import { useRef } from "react";
 
 export function Footer() {
+  const footerRef = useRef(null);
+
+  const { scrollY } = useScroll();
+
+  // 0 = footer escondido, 1 = footer totalmente revelado
+  const progress = useTransform(scrollY, (y) => {
+    const footerH = footerRef.current?.offsetHeight ?? 0;
+    if (!footerH) return 0;
+
+    const maxScroll =
+      document.documentElement.scrollHeight - window.innerHeight;
+    const revealStart = maxScroll - footerH;
+
+    return Math.min(1, Math.max(0, (y - revealStart) / footerH));
+  });
+
+
+  const scale = useTransform(progress, [0, 1], [0.98, 1])
+  const filter = useTransform(progress, [0, 1], ["blur(5px)", "blur(0px)"])
+  const opacity = useTransform(progress, [0, 1], [0.3, 1])
+  
   return (
-    <footer className="bg-primary px-6 py-14 lg:px-12">
+    <motion.footer 
+      ref={footerRef}
+      style={{ scale, filter, opacity }}
+      className="bg-primary px-6 py-14 lg:px-12 sticky bottom-0 z-0"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_auto_auto] lg:gap-20 lg:items-start">
 
@@ -80,6 +107,6 @@ export function Footer() {
           </a>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 }
