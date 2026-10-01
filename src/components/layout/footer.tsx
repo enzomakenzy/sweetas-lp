@@ -12,13 +12,11 @@ export function Footer() {
 
   const { scrollY } = useScroll();
 
-  // 0 = footer escondido, 1 = footer totalmente revelado
   const progress = useTransform(scrollY, (y) => {
     const footerH = footerRef.current?.offsetHeight ?? 0;
     if (!footerH) return 0;
 
-    const maxScroll =
-      document.documentElement.scrollHeight - window.innerHeight;
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
     const revealStart = maxScroll - footerH;
 
     return Math.min(1, Math.max(0, (y - revealStart) / footerH));
@@ -32,7 +30,7 @@ export function Footer() {
   return (
     <motion.footer 
       ref={footerRef}
-      style={{ scale, filter, opacity }}
+      style={{ scale, filter, opacity, transformOrigin: "bottom" }}
       className="bg-primary px-6 py-14 lg:px-12 sticky bottom-0 z-0"
     >
       <div className="max-w-7xl mx-auto">
