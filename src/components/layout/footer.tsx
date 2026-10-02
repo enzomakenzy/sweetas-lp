@@ -8,7 +8,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 
 export function Footer() {
-  const footerRef = useRef(null);
+  const footerRef = useRef<HTMLElement>(null);
 
   const { scrollY } = useScroll();
 
