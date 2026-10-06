@@ -1,4 +1,6 @@
+import { item } from "@/utils/list-items-reveal";
 import { listStars } from "@/utils/list-stars";
+import { motion } from "motion/react";
 
 interface Props {
   review: string;
@@ -8,7 +10,10 @@ interface Props {
 
 export function ReviewCard({ review, author, reviewCategory }: Props) {
   return (
-    <div className="relative px-7 py-6 bg-card rounded-2xl border-2 border-quinary shadow text-start transition duration-250 hover:border-primary/50 hover:-translate-y-1.5 hover:shadow-lg grid content-between group">
+    <motion.div
+      variants={item}
+      className="relative px-7 py-6 bg-card rounded-2xl border-2 border-quinary shadow text-start transition-color duration-250 hover:border-primary/50 hover:-translate-y-1.5 hover:shadow-lg grid content-between group"
+    >
       <div>
         <div className="mb-3">
           <div className="flex gap-1">
@@ -25,6 +30,6 @@ export function ReviewCard({ review, author, reviewCategory }: Props) {
         <p className="uppercase font-bold text-primary">{author}</p>
         <p className="text-sm">{reviewCategory}</p>
       </div>
-    </div>
+    </motion.div>
   );
 }
