@@ -1,4 +1,6 @@
+import { item } from "@/utils/list-items-reveal";
 import type { LucideIcon } from "lucide-react";
+import { motion } from "motion/react";
 
 interface Props {
   position: "01" | "02" | "03";
@@ -9,7 +11,7 @@ interface Props {
 
 export function QualityCard({ position, cardTitle, description, icon: Icon }: Props) {
   return (
-    <div className="relative flex gap-5 bg-primary-quality hover:bg-primary-quality-accent border border-primary-quality-border rounded-2xl transition duration-300 overflow-hidden group">
+    <motion.div className="relative flex gap-5 bg-primary-quality hover:bg-primary-quality-accent border border-primary-quality-border rounded-2xl transition-colors duration-300 overflow-hidden group" variants={item}>
       <div className="absolute w-2 rounded-full bg-secondary -left-1 top-1/2 -translate-y-1/2 h-[70%] transition-all duration-300 group-hover:h-[80%]"></div>
 
       <h3 className="font-accent text-secondary text-6xl pl-5 py-7 lg:py-9">{position}</h3>
@@ -20,6 +22,6 @@ export function QualityCard({ position, cardTitle, description, icon: Icon }: Pr
       </div>
 
       <Icon size={20} className="hidden transition-all duration-300 sm:block ml-auto mr-7 fill-primary-quality-border text-primary-quality-border my-8 group-hover:fill-secondary group-hover:text-secondary group-hover:scale-115" />      
-    </div>
+    </motion.div>
   );
 }
