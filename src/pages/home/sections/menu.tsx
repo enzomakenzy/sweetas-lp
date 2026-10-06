@@ -5,18 +5,27 @@ import coneOreo from "@/assets/images/cone-oreo.jpg";
 import coneBrigadeiro from "@/assets/images/cone-brigadeiro.jpg";
 import coneKitkat from "@/assets/images/cone-kitkat.jpg";
 import coneOuroBranco from "@/assets/images/core-ouro-branco.jpg";
+import { Reveal } from "@/components/common/reveal";
+import { container } from "@/utils/list-items-reveal";
+import { motion } from "motion/react";
 
 export function Menu() {
   return (
     <section id="cardapio" className="py-16 px-4 lg:px-12">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
-          <h3 className="font-accent text-2xl text-secondary">cardápio</h3>
-          <h2 className="text-primary font-heading font-bold text-5xl sm:text-6xl lg:text-7xl pb-3">Menu</h2>
-          <p className="text-quaternary lg:text-lg">Cada coninho é montado na hora. Toque em uma foto para ver os detalhes.</p>
+          <Reveal><h3 className="font-accent text-2xl text-secondary">cardápio</h3></Reveal>
+          <Reveal><h2 className="text-primary font-heading font-bold text-5xl sm:text-6xl lg:text-7xl pb-3">Menu</h2></Reveal>
+          <Reveal><p className="text-quaternary lg:text-lg">Cada coninho é montado na hora. Toque em uma foto para ver os detalhes.</p></Reveal>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:flex-wrap lg:grow-4">
+        <motion.div 
+          className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:flex-wrap lg:grow-4"
+          variants={container}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.15 }}
+        >
           <MenuCard 
             favlorName="brigadeiro"
             description="Crocantíssima casquinha de baunilha recheada com brigadeiro caseiro, coberta com gotas de chocolate ou disquete."
@@ -64,7 +73,7 @@ export function Menu() {
             image={coneNutinhoMorango}
             imageAlt="Cone de creme de avelã com morango"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

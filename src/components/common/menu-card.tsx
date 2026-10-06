@@ -1,6 +1,8 @@
 import { Diamond } from "lucide-react"
 import { Button } from "../ui/button";
 import { NavLink } from "react-router";
+import { motion } from "motion/react";
+import { item } from "@/utils/list-items-reveal";
 
 type Props = {
   favlorName: string;
@@ -12,7 +14,10 @@ type Props = {
 
 export function MenuCard({ favlorName, price, description, image, imageAlt }: Props) {
   return (
-    <div className="rounded-2xl overflow-hidden border-2 border-quaternary/50 relative transition-all duration-400 lg:max-w-full bg-card lg:hover:border-primary group h-full flex flex-col">
+    <motion.div 
+      className="rounded-2xl overflow-hidden border-2 border-quaternary/50 relative transition-colors duration-400 lg:max-w-full bg-card lg:hover:border-primary group h-full flex flex-col"
+      variants={item}
+    >
       <img src={image} alt={imageAlt} className="h-72 xs:h-96 sm:h-72 2md:h-96 w-full object-cover object-top transition duration-400 group-hover:lg:scale-105 group-hover:lg:-translate-y-2" />
 
       <div className="p-5 flex flex-col flex-1">
@@ -29,6 +34,6 @@ export function MenuCard({ favlorName, price, description, image, imageAlt }: Pr
           </NavLink>
         </div>  
       </div>
-    </div>
+    </motion.div>
   )
 }
