@@ -10,10 +10,16 @@ export default function Order() {
   return (
     <main className="bg-background p-4">
       <div>
+        <section className="mb-7">
+          <h2 className="font-accent text-2xl text-secondary">monte do seu jeito</h2>
+          <h1 className="font-heading font-bold text-primary text-3xl sm:text-4xl">Escolha quantos coninhos quiser, de cada sabor.</h1>
+          <p className="mt-2 text-quaternary xs:text-lg">Siga os passos abaixo e faça seu pedido</p>
+        </section>
+
         <section>
-          <h2 className="font-heading font-bold text-xl uppercase text-primary mb-4">1. Escolha os Sabores</h2>
+          <h3 className="font-heading font-bold text-xl uppercase text-primary mb-4 sm:text-2xl">1. Escolha os Sabores</h3>
           
-          <div className="flex flex-col gap-5">
+          <div className="grid gap-5 md:grid-cols-2">
             <OrderCard 
               image={coneBrigadeiro}
               imageAlt="Cone de brigadeiro"
