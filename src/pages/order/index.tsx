@@ -11,7 +11,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { useState, type ChangeEvent } from "react";
 import { formatWhatsapp } from "@/utils/format-whatsapp";
 import { X } from 'lucide-react';
-import { Heart } from "lucide-react";
 
 export default function Order() {
   const [whatsapp, setWhatsapp] = useState("");
@@ -161,8 +160,8 @@ export default function Order() {
 
           <p className="mb-7">Seu pedido está vazio</p>
 
-          <li className="mb-7">
-            <ul className="flex justify-between">
+          <ul className="mb-7">
+            <li className="flex justify-between">
               <div>
                 <span className="font-bold mr-2">1x</span> 
                 Nutinho c/ Morango
@@ -174,8 +173,8 @@ export default function Order() {
                   <X size={20} className="text-foreground/75 hover:text-tertiary cursor-pointer" />
                 </button>
               </div>
-            </ul>
-          </li>
+            </li>
+          </ul>
 
           <hr className="border-dashed border border-primary/30" />
 
