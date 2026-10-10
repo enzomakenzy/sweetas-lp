@@ -10,6 +10,8 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { useState, type ChangeEvent } from "react";
 import { formatWhatsapp } from "@/utils/format-whatsapp";
+import { X } from 'lucide-react';
+import { Heart } from "lucide-react";
 
 export default function Order() {
   const [whatsapp, setWhatsapp] = useState("");
@@ -19,14 +21,14 @@ export default function Order() {
   }
 
   return (
-    <main className="bg-background p-4">
-      <div>
-        <section className="mb-7">
-          <h2 className="font-accent text-2xl text-secondary">monte do seu jeito</h2>
-          <h1 className="font-heading font-bold text-primary text-3xl sm:text-4xl">Escolha quantos coninhos quiser, de cada sabor.</h1>
-          <p className="mt-2 text-quaternary xs:text-lg">Siga os passos abaixo e faça seu pedido</p>
-        </section>
+    <main className="bg-background p-4 pb-12">
+      <section className="mb-7">
+        <h2 className="font-accent text-2xl text-secondary">monte do seu jeito</h2>
+        <h1 className="font-heading font-bold text-primary text-3xl sm:text-4xl">Escolha quantos coninhos quiser, de cada sabor.</h1>
+        <p className="mt-2 text-quaternary xs:text-lg">Siga os passos abaixo e faça seu pedido</p>
+      </section>
 
+      <div className="flex flex-col gap-8">
         <section>
           <h3 className="font-heading font-bold text-xl uppercase text-primary mb-4 sm:text-2xl">1. Escolha os Sabores</h3>
           
@@ -117,7 +119,7 @@ export default function Order() {
                 <label>Como prefere receber?</label>
 
                 <div className="flex gap-2">
-                  <Button size="lg">Retirar no local</Button>
+                  <Button size="lg" className="hover:scale-102">Retirar no local</Button>
                   <Button 
                     size="lg" 
                     variant="outline" 
@@ -153,6 +155,40 @@ export default function Order() {
             </form>
           </div>
         </section>
+
+        <div className="rounded-2xl bg-card ring-2 ring-primary/10 p-5">
+          <h3 className="text-xl text-primary font-heading font-bold uppercase mb-3 sm:text-2xl">Resumo do pedido</h3>
+
+          <p className="mb-7">Seu pedido está vazio</p>
+
+          <li className="mb-7">
+            <ul className="flex justify-between">
+              <div>
+                <span className="font-bold mr-2">1x</span> 
+                Nutinho c/ Morango
+              </div>
+
+              <div className="flex items-center gap-1">
+                <span className="font-bold">R$ 10,00</span>
+                <button>
+                  <X size={20} className="text-foreground/75 hover:text-tertiary cursor-pointer" />
+                </button>
+              </div>
+            </ul>
+          </li>
+
+          <hr className="border-dashed border border-primary/30" />
+
+          <div className="mt-7 flex justify-between items-end">
+            <span className="uppercase font-bold text tracking-widest text-foreground/70">TOTAL · 0 UN</span>
+
+            <span className="text-3xl text-primary font-bold">R$ 0,00</span>
+          </div>
+
+          <Button size="lg" className="w-full mt-5 mb-3 hover:scale-103">Enviar pedido no Whatsapp</Button>
+
+          <p className="text-center text-foreground/70">Sem compromisso: você confirma tudo na conversa antes de pagar.</p>
+        </div>
       </div>
     </main>
   )
