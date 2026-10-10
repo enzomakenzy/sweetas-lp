@@ -83,8 +83,8 @@ export default function Order() {
           <div>
             <h3 className="font-heading font-bold text-xl uppercase text-primary mb-4 sm:text-2xl">2. Seus Dados</h3>
 
-            <form action="" className="**:[label]:uppercase **:[label]:font-bold **:[label]:text-sm **:[label]:tracking-widest **:[label]:text-foreground/70 flex flex-col gap-4">
-              <div className="flex flex-col gap-4">
+            <form className="**:[label]:uppercase **:[label]:font-bold **:[label]:text-sm **:[label]:tracking-widest **:[label]:text-foreground/70 flex flex-col gap-4">
+              <div className="flex flex-col gap-4 md:flex-row *:md:flex-1">
                 <div className="flex flex-col gap-1">
                   <label htmlFor="name">Nome</label>
 
@@ -136,13 +136,19 @@ export default function Order() {
                   id="address" 
                   name="address" 
                   placeholder="Rua, número, bairro e referência" 
+                  autoComplete="off"
                 />
               </div>
 
               <div className="flex flex-col gap-2">
                 <label htmlFor="observations">Observações (opcional)</label>
                 
-                <Textarea id="observations" name="observations" placeholder="Data e horário desejado, embalagem para presente, etc" className="h-30 rounded-xl" />
+                <Textarea 
+                  id="observations" 
+                  name="observations" 
+                  placeholder="Data e horário desejado, embalagem para presente, etc" 
+                  className="h-30 rounded-xl" 
+                />
               </div>
             </form>
           </div>
